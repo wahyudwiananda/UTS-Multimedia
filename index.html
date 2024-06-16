@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pemrograman Multimedia</title>
+  </head>
+  <body id="beranda">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand" href="#beranda">Bakul Sayur Yogyakarta</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#beranda">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#produk">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kebun">Kebun Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="jumbotron text-center">
+      <img src="https://cdn.kibrispdr.org/data/763/logo-sayur-mayur-10.jpg" alt="logo" width="300" class="rounded-circle shadow" />
+      <h1 class="display-4">Bakul Sayur Yogyakarta</h1>
+      <p class="lead">Kesehatan dari Ladang Langsung ke Meja Anda!</p>
+    </section>
+
+    <!-- Produk -->
+    <section id="produk">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>PRODUK KAMI</h2>
+          </div>
+        </div>
+        <br />
+        <div class="row mt-3">
+          <div class="col">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://asset-2.tstatic.net/palembang/foto/bank/images/Sawi-Hijau-Pahit.jpg" class="d-block w-100" alt="produk1" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Sawi Hijau</h5>
+                    <p>Sawi hijau kaya akan vitamin C, K, dan A yang mendukung sistem kekebalan tubuh serta memiliki kandungan serat untuk pencernaan yang sehat.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://umsu.ac.id/health/wp-content/uploads/2023/08/Wortel-Kandungan-dan-Manfaat-Untuk-Kesehatan-scaled.jpg" class="d-block w-100" alt="produk2" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Wortel</h5>
+                    <p>Wortel, dengan kandungan beta-karoten tinggi, sangat baik untuk kesehatan mata dan kulit serta menyediakan vitamin A penting untuk sistem kekebalan tubuh.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://akcdn.detik.net.id/visual/2021/05/24/sayur-kol-1_169.jpeg?w=650" class="d-block w-100" alt="produk3" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kol</h5>
+                    <p>Kol, selain mengandung vitamin C, K, dan folat untuk kesehatan tulang, juga memiliki senyawa sulforaphane yang dapat membantu melindungi tubuh dari beberapa jenis kanker dan memiliki sifat detoksifikasi yang baik.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <!-- Kebun -->
+    <section id="kebun">
+      <div class="container mt-5 text-center">
+        <div class="row mb-3">
+          <div class="col">
+            <h2>KEBUN KAMI</h2>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col">
+            <video id="myVideo" width="640" height="360" controls>
+              <source src="src/vidio kebun.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="controls">
+              <button type="button" class="btn btn-success" id="playBtn"><i class="bi bi-play-circle"></i></button>
+              <button type="button" class="btn btn-danger" id="stopBtn"><i class="bi bi-stop-circle"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- kontak -->
+    <section id="kontak">
+      <div class="container mt-5">
+        <div class="row mb-3">
+          <div class="col text-center">
+            <h2>KONTAK</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap:</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Alamat Email:</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan:</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-success text-center p-2 mt-5">
+      <p class="text-white">Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/wahyuananda_05/" class="text-white fw-bold" target="blank">Wahyu Dwi Ananda</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
