@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function updatePlayButton() {
     if (video.paused) {
-      playBtn.innerHTML = '<i class="bi bi-play-circle"></i>';
+      playBtn.innerHTML = '<i class="bi bi-play-circle"></i> Play';
     } else {
-      playBtn.innerHTML = '<i class="bi bi-pause-circle"></i>';
+      playBtn.innerHTML = '<i class="bi bi-pause-circle"></i> Pause';
     }
   }
 
@@ -28,13 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   video.addEventListener("ended", function () {
-    playBtn.innerHTML = '<i class="bi bi-play-circle"></i>';
+    playBtn.innerHTML = '<i class="bi bi-play-circle"></i> Play';
   });
 
   var stopBtn = document.getElementById("stopBtn");
   stopBtn.addEventListener("click", function () {
     video.pause();
     video.currentTime = 0;
-    playBtn.innerHTML = '<i class="bi bi-play-circle"></i>';
+    playBtn.innerHTML = '<i class="bi bi-play-circle"></i> Play';
   });
 });

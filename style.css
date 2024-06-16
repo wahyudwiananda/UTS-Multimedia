@@ -28,3 +28,21 @@ body {
 footer {
   opacity: 0.8;
 }
+
+.controls {
+  background-color: hsl(0, 0%, 0%, 0.7);
+  padding: 5px;
+  max-width: 640px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+form {
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+hr {
+  margin: auto;
+  max-width: 500px;
+}
